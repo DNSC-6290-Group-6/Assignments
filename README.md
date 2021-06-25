@@ -18,7 +18,7 @@ purposes
 
 ### Training Data
 * The Home Mortgage Disclosure Act (HDMA) training data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
-* The data was split into train and validation partitions using a 0.7 split ratio or 70% train and 30% test split. 
+* Data was split into train and validation partitions using a 0.7 split ratio or 70% train and 30% test split. 
 * Training data has a total of 112,253 rows and 23 columns while the validation data has a total of 48,085 rows and 23 columns. 
 * The following table below explains the meaning of all the training data columns: 
 
@@ -46,20 +46,20 @@ male | Binary numeric input, whether a person identifies as male (1) or not male
 female | Binary numeric input, whether a person identifies as female (1) or not female (0). 
 agegte62 | Binary numeric input, whether a person is over the age of 62 (1) or not over the age of 62 (0). 
 agelt62 | Binary numeric input, whether a person is below the age of 62 (1) or not below the age of 62 (0). 
-row_id | Identification for each row. 
+row_id | Identification number for each row. 
 
 ### Evaluation Data 
 * The Home Mortgage Disclosure Act (HDMA) evaluation (or test) data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
-* Evaluation (or test) data has 19,831 rows and 23 columns. 
-* State any differences in columns between training and evaluation (or test) data
+* Evaluation (or test) data has 19,831 rows and 22 columns. 
+* The only difference between the columns in the training and evaluation data is that the evaluation data does not have the 'high_priced' column. 
 
 ### Model Details
-* State the columns used as inputs in your group’s best remediated model
-* State the columns used as targets in your group’s best remediated model
-* State the type of your group’s best remediated model
-* State the software used to implement your group’s best remediated model
-* State the version of the modeling software for your group’s best remediated model
-* State the hyperparameters or other settings of your group’s best remediated model
+* Columns used as inputs in the remediated EBM model include: 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'. 
+* Column used as a target in the remediated EBM model is 'high_priced'. 
+* STATE the type of your group’s best remediated model
+* Software/packages used to implement the remediated EBM model include: 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
+* Version of the software/packages: 'interpret 0.2.4', 'numpy 1.18.5', and 'pandas 1.0.5'. 
+* Hyperparameters for the remediated EBM model include: 'max_bins': 512, 'max_interaction_bins': 16, 'interactions': 10, 'outer_bags': 4, 'inner_bags': 0, 'learning_rate': 0.001, 'validation_size': 0.25, 'min_samples_leaf': 5, 'max_leaves': 5, 'early_stopping_rounds': 100.0, 'n_jobs': NTHREAD, 'random_state': SEED. 
 
 ### Quantitative Analysis
 * State the metrics used to evaluate your group’s best remediated model
