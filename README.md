@@ -50,7 +50,7 @@ row_id | Identification for each row.
 
 ### Evaluation Data 
 * The Home Mortgage Disclosure Act (HDMA) evaluation (or test) data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
-* The evaluation (or test) data has 19,831 rows. 
+* Evaluation (or test) data has 19,831 rows and 23 columns. 
 * State any differences in columns between training and evaluation (or test) data
 
 ### Model Details
