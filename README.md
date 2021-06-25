@@ -6,10 +6,13 @@
 * The follwing group members that worked on developing the EBM model include Runzhe Tang, Qian Xie, and Matias Roca. 
 
 ### Intended Use
-* Describe the business value of your group’s best remediated model
-* Describe how your group’s best remediated model is designed to be used
-* Describe the intended users for your group’s best remediated model
-* State whether your group’s best remediated model can or cannot be used for any additional
+* The remediated EBM model was designed to predict the annual percentage rate (APR) charged for a mortgage while taking into consideration fairness, security and accuracy using mortgage, debt, and income information from the Home Mortgage Disclosure Act (HDMA) data. 
+* The EBM model was designed to address: 
+   * Discrimination by testing and remediating using adverse impact ratio (AIR)
+   * Security by conducting a white-hat model extraction attack and identifying vulnerabilities 
+   * Accuracy by conducting residual analysis and remediating discovered bugs 
+* DESCRIBE the intended users for your group’s best remediated model
+* STATE whether your group’s best remediated model can or cannot be used for any additional
 purposes
 
 # IMAGES EXAMPLE
