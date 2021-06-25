@@ -17,7 +17,7 @@ purposes
 
 
 ### Training Data
-* State the source of training data
+* The Home Mortgage Disclosure Act (HDMA) training data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data
 * State how training data was divided into training and validation data
 * State the number of rows in training and validation data
 * Define the meaning of all training data columns
