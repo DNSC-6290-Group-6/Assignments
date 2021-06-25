@@ -12,6 +12,10 @@
 * State whether your group’s best remediated model can or cannot be used for any additional
 purposes
 
+# IMAGES EXAMPLE
+![](images/demo.png)
+
+
 ### Training Data
 * State the source of training data
 * State how training data was divided into training and validation data
