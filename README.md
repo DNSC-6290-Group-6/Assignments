@@ -35,9 +35,21 @@ loan_to_value_ratio_std  | Numeric input, ratio of the mortgage size to the valu
 no_intro_rate_period_std  | Binary numeric input, whether or not a mortgage does not include an introductory rate period.
 property_value_std  | Numeric input, value of the mortgaged property.
 term_360  |  Binary numeric input, whether the mortgage is a standard 360 month mortgage (1) or a different type of mortgage (0).
+black | Binary numeric input, whether a person identifies as black (1) or not black (0). 
+asian | Binary numeric input, whether a person identifies as asian (1) or not asian (0). 
+white | Binary numeric input, whether a person identifies as white (1) or not white (0). 
+amind | Binary numeric input, whether a person identifies as amind (1) or not amind (0). 
+hipac | Binary numeric input, whether a person identifies as hipac (1) or not hipac (0). 
+hispanic | Binary numeric input, whether a person identifies as hispanic (1) or not hispanic (0). 
+non_hispanic | Binary numeric input, whether a person identifies as non_hispanic (1) or not non_hispanic (0). 
+male | Binary numeric input, whether a person identifies as male (1) or not male (0). 
+female | Binary numeric input, whether a person identifies as female (1) or not female (0). 
+agegte62 | Binary numeric input, whether a person is over the age of 62 (1) or not over the age of 62 (0). 
+agelt62 | Binary numeric input, whether a person is below the age of 62 (1) or not below the age of 62 (0). 
+row_id | Identification for each row. 
 
 ### Evaluation Data 
-* State the source of evaluation (or test) data
+* The Home Mortgage Disclosure Act (HDMA) evaluation (or test) data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
 * State the number of rows in evaluation (or test) data
 * State any differences in columns between training and evaluation (or test) data
 
