@@ -19,7 +19,7 @@ purposes
 ### Training Data
 * The Home Mortgage Disclosure Act (HDMA) training data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
 * The data was split into train and validation partitions using a 0.7 split ratio or 70% train and 30% test split. 
-* Training data had a total of 112,253 rows and 23 columns while the validation data had a total of 48,085 rows and 23 columns. 
+* Training data has a total of 112,253 rows and 23 columns while the validation data has a total of 48,085 rows and 23 columns. 
 * The following table below explains the meaning of all the training data columns: 
 
 Variable  | Meaning
@@ -50,7 +50,7 @@ row_id | Identification for each row.
 
 ### Evaluation Data 
 * The Home Mortgage Disclosure Act (HDMA) evaluation (or test) data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
-* State the number of rows in evaluation (or test) data
+* The evaluation (or test) data has 19,831 rows. 
 * State any differences in columns between training and evaluation (or test) data
 
 ### Model Details
