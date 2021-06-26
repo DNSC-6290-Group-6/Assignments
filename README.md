@@ -27,6 +27,7 @@
     * ff
 
 #### Figure 3: 
+![](images/residualanalysis.png)
 
 ## 3.) Training Data
 * The Home Mortgage Disclosure Act (HDMA) training data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
