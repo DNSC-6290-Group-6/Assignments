@@ -24,9 +24,10 @@
 ![](images/stolen_dt.png)
 
 * Accuracy by conducting residual analysis and remediating discovered bugs. 
-    * ff
+    * Figure 3 shows the residual analysis that was conducted to determine that the model struggles to predict when customers will recieve a high-priced loan correctly.
+     * If your 'high_priced 1' value is less than 0.1, the EBM model is shocked and model must be debugged. 
 
-#### Figure 3: 
+#### Figure 3: Residual Analysis Plot
 ![](images/residualanalysis.png)
 
 ## 3.) Training Data
