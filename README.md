@@ -6,14 +6,13 @@
 * The follwing group members that worked on developing the EBM model include Runzhe Tang, Qian Xie, and Matias Roca. 
 
 ### Intended Use
-* The remediated EBM model was designed to predict the annual percentage rate (APR) charged for a mortgage while taking into consideration fairness, security and accuracy using mortgage, debt, and income information from the Home Mortgage Disclosure Act (HDMA) data. 
+* The EBM model in this project is beneficial because it can predict the annual percentage rate (APR) charged for a mortgage while taking into consideration fairness, security and accuracy using mortgage, debt, and income information from the Home Mortgage Disclosure Act (HDMA) data. 
 * The EBM model was designed to address: 
    * Discrimination by testing and remediating using adverse impact ratio (AIR)
    * Security by conducting a white-hat model extraction attack and identifying vulnerabilities 
    * Accuracy by conducting residual analysis and remediating discovered bugs 
 * DESCRIBE the intended users for your group’s best remediated model
-* STATE whether your group’s best remediated model can or cannot be used for any additional
-purposes
+* Although the model's intended purpose is to accurately predict APR charged for a mortgage, it can also serve as a template for other users to better understand how to implement an EBM model that takes discrimination, security, and privacy into consideration. 
 
 # IMAGES EXAMPLE
 ![](images/demo.png)
@@ -59,7 +58,7 @@ row_id | Identification number for each row.
 ### Model Details
 * Columns used as inputs in the remediated EBM model include: 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'. 
 * Column used as a target in the remediated EBM model is 'high_priced'. 
-* STATE the type of your group’s best remediated model
+* The EBM model is a type of GAM which treats each input feature in additive fashion resulting in a high level of interpretability. 
 * Software/packages used to implement the remediated EBM model include: 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
 * Version of the software/packages: 'interpret 0.2.4', 'numpy 1.18.5', and 'pandas 1.0.5'. 
 * Hyperparameters for the remediated EBM model include: 'max_bins': 512, 'max_interaction_bins': 16, 'interactions': 10, 'outer_bags': 4, 'inner_bags': 0, 'learning_rate': 0.001, 'validation_size': 0.25, 'min_samples_leaf': 5, 'max_leaves': 5, 'early_stopping_rounds': 100.0, 'n_jobs': NTHREAD, 'random_state': SEED. 
