@@ -9,8 +9,14 @@
 * The EBM model in this project is beneficial because it can predict the annual percentage rate (APR) charged for a mortgage while taking into consideration fairness, security and accuracy using mortgage, debt, and income information from the Home Mortgage Disclosure Act (HDMA) data. 
 * The EBM model was designed to address: 
    * Discrimination by testing and remediating using adverse impact ratio (AIR)
+
+
    * Security by conducting a white-hat model extraction attack and identifying vulnerabilities 
+
+
    * Accuracy by conducting residual analysis and remediating discovered bugs 
+
+
 * The intended users for this model are for people intersted in learning how to implement an EBM model. 
 * Although the model's intended purpose is to accurately predict APR charged for a mortgage, it can also serve as a template for other users to better understand how to implement an EBM model that takes discrimination, security, and privacy into consideration. 
 
@@ -85,10 +91,13 @@ remediated model.
 
 
 ## 7.) Ethical Considerations
-* Describe potential negative impacts of using your group’s best remediated model:
-    * Consider math or software problems
-    * Consider real-world risks: who, what, when and how?
-* Describe potential uncertainties relating to the impacts of using your group’s best remediated
+* Potential negative impacts of using EBM model:
+    * Outdated packages used to create the EBM model could affect the level of discrimination, security, and accuracy within the model. 
+    * Variables from the HDMA data, like loan_to_value_ratio_std, can improve accuracy for the EBM model and simultaneously bring bias as a result of inherent structural inequities.
+    * Implementing the EBM model without having an appeal mechanism in place for people who are not given a mortgage or are charged a high APR could result in serious financial and life problems for those individuals. 
+    
+    
+potential uncertainties relating to the impacts of using your group’s best remediated
 model:
   * Consider math or software problems
   * Consider real-world risks: who, what, when and how?
