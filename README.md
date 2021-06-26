@@ -9,16 +9,20 @@
 * The EBM model in this project is beneficial because it can predict the annual percentage rate (APR) charged for a mortgage while taking into consideration fairness, security and accuracy using mortgage, debt, and income information from the Home Mortgage Disclosure Act (HDMA) data. 
 * The intended users for this model are for people interested in learning how to implement an EBM model. 
 * Although the model's intended purpose is to accurately predict APR charged for a mortgage, it can also serve as a template for other users to better understand how to implement an EBM model that takes discrimination, security, and privacy into consideration. 
-* The EBM model was designed to address: 
-   * Discrimination by testing and remediating using adverse impact ratio (AIR)
+
+### 2a.) The EBM model was designed to address: 
+* Discrimination by testing and remediating using adverse impact ratio (AIR).
+    * dd
+ 
 
 #### Figure 1: 
 
-   * Security by conducting a white-hat model extraction attack and identifying vulnerabilities 
+* Security by conducting a white-hat model extraction attack and identifying vulnerabilities.
+    *
 
 #### Figure 2: 
-
-   * Accuracy by conducting residual analysis and remediating discovered bugs 
+* Accuracy by conducting residual analysis and remediating discovered bugs. 
+    *
 
 #### Figure 3: 
 
@@ -26,7 +30,7 @@
 * The Home Mortgage Disclosure Act (HDMA) training data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
 * Data was split into train and validation partitions using a 0.7 split ratio or 70% train and 30% test split. 
 * Training data has a total of 112,253 rows and 23 columns while the validation data has a total of 48,085 rows and 23 columns. 
-* Figure # below explains the meaning of all the training data columns: 
+* Figure 4 below explains the meaning of all the training data columns: 
 
 #### Figure 4: Data Columns Table 
 Variable  | Meaning
@@ -97,15 +101,15 @@ row_id | Identification number for each row.
 
 ## 7.) Ethical Considerations
 * Potential negative impacts of using the our EBM model:
-    * Outdated packages used to create the EBM model could affect the level of discrimination, security, and accuracy within the model. 
+    * Outdated packages used to create the EBM model could hinder the level of discrimination, security, and accuracy within the model. 
     * Variables from the HDMA data, like 'loan_to_value_ratio_std', can improve accuracy for the EBM model and simultaneously bring bias as a result of structural inequities.
     * Implementing the EBM model without having an appeal mechanism in place for people who are not given a mortgage could result in serious financial and life problems for those individuals. 
     
 * Potential uncertainties relating to the impacts of using our EBM model:
-  * 
-  * Consider real-world risks: who, what, when and how?
+  * EBM model changes when packages used to create the model are updated. 
+  * Legal implications of implementing the model in the real-world. 
 
 ## 8.) Conclusion 
 * Overall, this was a great learning process to better understand the general rules and steps within interpretable machine learning models for ensuring fairness, security, and accuracy. 
-* Our group is open to constructive criticism and would like to get any feedback as to how to improve the EBM model presented in this model card. 
+* Our group is open to constructive criticism and would like to receieve any feedback as to how to improve the EBM model presented in this model card. 
 
