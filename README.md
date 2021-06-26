@@ -11,7 +11,7 @@
    * Discrimination by testing and remediating using adverse impact ratio (AIR)
    * Security by conducting a white-hat model extraction attack and identifying vulnerabilities 
    * Accuracy by conducting residual analysis and remediating discovered bugs 
-* DESCRIBE the intended users for your group’s best remediated model
+* The intended users for this model are for people intersted in learning how to implement an EBM model. 
 * Although the model's intended purpose is to accurately predict APR charged for a mortgage, it can also serve as a template for other users to better understand how to implement an EBM model that takes discrimination, security, and privacy into consideration. 
 
 # IMAGES EXAMPLE
