@@ -64,7 +64,11 @@ row_id | Identification number for each row.
 * Hyperparameters for the remediated EBM model include: 'max_bins': 512, 'max_interaction_bins': 16, 'interactions': 10, 'outer_bags': 4, 'inner_bags': 0, 'learning_rate': 0.001, 'validation_size': 0.25, 'min_samples_leaf': 5, 'max_leaves': 5, 'early_stopping_rounds': 100.0, 'n_jobs': NTHREAD, 'random_state': SEED. 
 
 ### Quantitative Analysis
-* State the metrics used to evaluate your group’s best remediated model
+* EBM is the best model when compared to alternative models, like the penalized general linear model (GLM) and monotonic gradient boosting machine (MGBM) model, because it is ranked highest on average across metrics and folds. 
+* Table # below shows the metrics used to evaluate EBM against alternative models
+Table #
+![](images/rank.png)
+
 * State the values of the metrics for training, validation, and evaluation (or test) data – evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
 * Provide at least one plot or table from each weekly assignment for a total of at least six plots,
 that must include the global variable importance and partial dependence of your group’s best
