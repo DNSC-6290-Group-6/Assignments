@@ -14,17 +14,13 @@
 * The intended users for this model are for people intersted in learning how to implement an EBM model. 
 * Although the model's intended purpose is to accurately predict APR charged for a mortgage, it can also serve as a template for other users to better understand how to implement an EBM model that takes discrimination, security, and privacy into consideration. 
 
-# IMAGES EXAMPLE
-![](images/demo.png)
-
-
 ### Training Data
 * The Home Mortgage Disclosure Act (HDMA) training data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
 * Data was split into train and validation partitions using a 0.7 split ratio or 70% train and 30% test split. 
 * Training data has a total of 112,253 rows and 23 columns while the validation data has a total of 48,085 rows and 23 columns. 
 * Table # below explains the meaning of all the training data columns: 
 
-Table #: Training Data Columns 
+#### Table #: Training Data Columns 
 Variable  | Meaning
 ------------- | -------------
 high_priced  | Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. 
@@ -68,7 +64,7 @@ row_id | Identification number for each row.
 * EBM is the best model when compared to alternative models, like the penalized general linear model (GLM) and monotonic gradient boosting machine (MGBM) model, because it is ranked highest on average across metrics and folds. 
 * Table # below shows the metrics used to evaluate EBM against alternative models
 
-Table #: Evaluation Metrics Across All Models 
+#### Table #: Evaluation Metrics Across All Models 
 ![](images/Rank.png)
 
 * State the values of the metrics for training, validation, and evaluation (or test) data – evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
