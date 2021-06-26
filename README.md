@@ -12,17 +12,17 @@
 
 ### 2a.) The EBM model was designed to address: 
 * Discrimination by testing and remediating using adverse impact ratio (AIR).
-    * dd
+    * Area under the curve (AUC) The area under (a ROC) curve is a measure of the accuracy of a quantitative diagnostic test.
  
-
-#### Figure 1: 
+#### Figure 1: Grid Search AIR vs AUC 
+![](images/gridsearch.png)
 
 * Security by conducting a white-hat model extraction attack and identifying vulnerabilities.
-    *
+    * ff
 
 #### Figure 2: 
 * Accuracy by conducting residual analysis and remediating discovered bugs. 
-    *
+    * ff
 
 #### Figure 3: 
 
