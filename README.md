@@ -9,7 +9,9 @@
 * The EBM model can predict the annual percentage rate (APR) charged for a mortgage while taking into consideration fairness, security and accuracy using mortgage, debt, and income information from the Home Mortgage Disclosure Act (HDMA) data. 
 * The intended users for this model are for people interested in learning how to implement an EBM model. 
 * Although the model's intended purpose is to accurately predict APR charged for a mortgage, it can also serve as a template for other users to better understand how to implement an EBM model that takes discrimination, security, and privacy into consideration. 
-### 3.) The EBM model was designed to address: 
+
+## 3.) EBM model Design
+### The EBM model was designed to address: 
 
 ### 3a.) Discrimination by testing and remediating using adverse impact ratio (AIR).
 * Figure 1 shows a simple random grid on a two dimensional plot with AIR on the x-axis and area under the curve (AUC) on the y-axis which yields various options for accurate and less discriminatory models.
@@ -69,12 +71,12 @@ row_id | Identification number for each row.
 * The only difference between the columns in the training and evaluation data is that the evaluation data does not have the 'high_priced' column. 
 
 ## 6.) Model Details
-* Columns used as inputs in the remediated EBM model include: 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'. 
-* Column used as a target in the remediated EBM model is 'high_priced'. 
+* Columns used as inputs in the EBM model include: 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'. 
+* Column used as a target in the EBM model is 'high_priced'. 
 * The EBM model is a type of GAM which treats each input feature in an additive fashion resulting in a high level of interpretability. 
-* Software/packages used to implement the remediated EBM model include: 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
+* Software/packages used to implement the EBM model include: 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
 * Version of the software/packages: 'interpret 0.2.4', 'numpy 1.18.5', and 'pandas 1.0.5'. 
-* Hyperparameters for the remediated EBM model include: 'max_bins': 512, 'max_interaction_bins': 16, 'interactions': 10, 'outer_bags': 4, 'inner_bags': 0, 'learning_rate': 0.001, 'validation_size': 0.25, 'min_samples_leaf': 5, 'max_leaves': 5, 'early_stopping_rounds': 100.0, 'n_jobs': NTHREAD, 'random_state': SEED. 
+* Hyperparameters for the EBM model include: 'max_bins': 512, 'max_interaction_bins': 16, 'interactions': 10, 'outer_bags': 4, 'inner_bags': 0, 'learning_rate': 0.001, 'validation_size': 0.25, 'min_samples_leaf': 5, 'max_leaves': 5, 'early_stopping_rounds': 100.0, 'n_jobs': NTHREAD, 'random_state': SEED. 
 
 ## 7.) Quantitative Analysis
 * EBM is the best model when compared to alternative models, like the penalized general linear model (GLM) and monotonic gradient boosting machine (MGBM) model, because it is ranked highest on average across metrics and folds. 
@@ -92,7 +94,7 @@ row_id | Identification number for each row.
 
 ### 7b.) Partial Dependence for Top 3 Most Important Variables 
 
-* Figures 7, 8, and 9 provide an estimate of the average behavior for the top 3 variables most important variables across all rows in the EBM model. 
+* Figures 7, 8, and 9 provide an estimate of the average behavior for the top 3 most important variables across all rows in the EBM model. 
 
 #### Figure 7: Partial Dependence for 'debt_to_income_ratio_std'
 ![](images/PDdebt_to_income_ratio_std.png)
@@ -116,5 +118,5 @@ row_id | Identification number for each row.
 
 ## 9.) Conclusion 
 * Overall, this was a great learning process to better understand the general rules and steps within interpretable machine learning models for ensuring fairness, security, and accuracy. 
-* Our group is open to constructive criticism and would like to receieve any feedback as to how to improve the EBM model presented in this model card. 
+* Our group is open to constructive criticism and would like to receive any feedback as to how to improve the EBM model presented in this model card. 
 
