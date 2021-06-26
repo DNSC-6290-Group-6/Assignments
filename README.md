@@ -67,11 +67,10 @@ row_id | Identification number for each row.
 #### Table #: Evaluation Metrics Across All Models 
 ![](images/Rank.png)
 
-* State the values of the metrics for training, validation, and evaluation (or test) data – evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
 * Provide at least one plot or table from each weekly assignment for a total of at least six plots,
 that must include the global variable importance and partial dependence of your group’s best
 remediated model.
-* Address other alternative models considered
+
 
 ### Ethical Considerations
 * Describe potential negative impacts of using your group’s best remediated model:
