@@ -22,8 +22,9 @@
 * The Home Mortgage Disclosure Act (HDMA) training data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
 * Data was split into train and validation partitions using a 0.7 split ratio or 70% train and 30% test split. 
 * Training data has a total of 112,253 rows and 23 columns while the validation data has a total of 48,085 rows and 23 columns. 
-* The following table below explains the meaning of all the training data columns: 
+* Table # below explains the meaning of all the training data columns: 
 
+Table #: Training Data Columns 
 Variable  | Meaning
 ------------- | -------------
 high_priced  | Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. 
@@ -66,8 +67,9 @@ row_id | Identification number for each row.
 ### Quantitative Analysis
 * EBM is the best model when compared to alternative models, like the penalized general linear model (GLM) and monotonic gradient boosting machine (MGBM) model, because it is ranked highest on average across metrics and folds. 
 * Table # below shows the metrics used to evaluate EBM against alternative models
-Table #
-![](images/rank.png)
+
+Table #: Evaluation Metrics Across All Models 
+![](images/Rank.png)
 
 * State the values of the metrics for training, validation, and evaluation (or test) data – evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
 * Provide at least one plot or table from each weekly assignment for a total of at least six plots,
