@@ -7,26 +7,28 @@
 
 ## 2.) Intended Use
 * The EBM model in this project is beneficial because it can predict the annual percentage rate (APR) charged for a mortgage while taking into consideration fairness, security and accuracy using mortgage, debt, and income information from the Home Mortgage Disclosure Act (HDMA) data. 
+* The intended users for this model are for people interested in learning how to implement an EBM model. 
+* Although the model's intended purpose is to accurately predict APR charged for a mortgage, it can also serve as a template for other users to better understand how to implement an EBM model that takes discrimination, security, and privacy into consideration. 
 * The EBM model was designed to address: 
    * Discrimination by testing and remediating using adverse impact ratio (AIR)
 
+#### Figure 1: 
 
    * Security by conducting a white-hat model extraction attack and identifying vulnerabilities 
 
+#### Figure 2: 
 
    * Accuracy by conducting residual analysis and remediating discovered bugs 
 
-
-* The intended users for this model are for people intersted in learning how to implement an EBM model. 
-* Although the model's intended purpose is to accurately predict APR charged for a mortgage, it can also serve as a template for other users to better understand how to implement an EBM model that takes discrimination, security, and privacy into consideration. 
+#### Figure 3: 
 
 ## 3.) Training Data
 * The Home Mortgage Disclosure Act (HDMA) training data was downloaded from this Github repository: https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
 * Data was split into train and validation partitions using a 0.7 split ratio or 70% train and 30% test split. 
 * Training data has a total of 112,253 rows and 23 columns while the validation data has a total of 48,085 rows and 23 columns. 
-* Table # below explains the meaning of all the training data columns: 
+* Figure # below explains the meaning of all the training data columns: 
 
-#### Table #: Training Data Columns 
+#### Figure 4: Data Columns Table 
 Variable  | Meaning
 ------------- | -------------
 high_priced  | Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. 
@@ -68,37 +70,42 @@ row_id | Identification number for each row.
 
 ## 6.) Quantitative Analysis
 * EBM is the best model when compared to alternative models, like the penalized general linear model (GLM) and monotonic gradient boosting machine (MGBM) model, because it is ranked highest on average across metrics and folds. 
-* Table # below shows the metrics used to evaluate EBM against alternative models
+* Figure 5 below shows the metrics used to evaluate the EBM model against alternative models: 
 
-#### Table #: Evaluation Metrics Across All Models 
+#### Figure 5: Evaluation Metrics for All Models Table 
 ![](images/Rank.png)
 
 ### 6a.) Global Variable Importance
 
+* Figure 6 below shows the global feature importance for the EBM model, with 'loan_to_value_ratio_std', 'property_value_std', and 'debt_to_income_ratio_std' having the highest importance. 
+
+#### Figure 6: EBM Global Feature Importance 
 ![](images/GlobalFeatureImportance.png)
 
 ### 6b.) Partial Dependence for Top 3 Most Important Variables 
 
+* Figures 7, 8, and 9 provide an estimate of the average behavior for the top 3 variables most important variables across all rows in the EBM model. 
+
+#### Figure 7: Partial Dependence for 'debt_to_income_ratio_std'
 ![](images/PDdebt_to_income_ratio_std.png)
 
+#### Figure 8: Partial Dependence for 'loan_to_value_ratio_std'
 ![](images/PDloan_to_value_ratio_std.png)
 
+#### Figure 9: Partial Dependence for 'property_value_std'
 ![](images/PDproperty_value_std.png)
 
-* Provide at least one plot or table from each weekly assignment for a total of at least six plots,
-that must include the global variable importance and partial dependence of your group’s best
-remediated model.
-
-
 ## 7.) Ethical Considerations
-* Potential negative impacts of using EBM model:
+* Potential negative impacts of using the our EBM model:
     * Outdated packages used to create the EBM model could affect the level of discrimination, security, and accuracy within the model. 
-    * Variables from the HDMA data, like loan_to_value_ratio_std, can improve accuracy for the EBM model and simultaneously bring bias as a result of inherent structural inequities.
-    * Implementing the EBM model without having an appeal mechanism in place for people who are not given a mortgage or are charged a high APR could result in serious financial and life problems for those individuals. 
+    * Variables from the HDMA data, like 'loan_to_value_ratio_std', can improve accuracy for the EBM model and simultaneously bring bias as a result of structural inequities.
+    * Implementing the EBM model without having an appeal mechanism in place for people who are not given a mortgage could result in serious financial and life problems for those individuals. 
     
-    
-potential uncertainties relating to the impacts of using your group’s best remediated
-model:
-  * Consider math or software problems
+* Potential uncertainties relating to the impacts of using our EBM model:
+  * 
   * Consider real-world risks: who, what, when and how?
-* Describe any unexpected or results encountered during training
+
+## 8.) Conclusion 
+* Overall, this was a great learning process to better understand the general rules and steps within interpretable machine learning models for ensuring fairness, security, and accuracy. 
+* Our group is open to constructive criticism and would like to get any feedback as to how to improve the EBM model presented in this model card. 
+
