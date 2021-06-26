@@ -20,7 +20,7 @@
 * Training data has a total of 112,253 rows and 23 columns while the validation data has a total of 48,085 rows and 23 columns. 
 * Table # below explains the meaning of all the training data columns: 
 
-#### Table #: Training Data Columns 
+##### Table #: Training Data Columns 
 Variable  | Meaning
 ------------- | -------------
 high_priced  | Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. 
@@ -64,8 +64,20 @@ row_id | Identification number for each row.
 * EBM is the best model when compared to alternative models, like the penalized general linear model (GLM) and monotonic gradient boosting machine (MGBM) model, because it is ranked highest on average across metrics and folds. 
 * Table # below shows the metrics used to evaluate EBM against alternative models
 
-#### Table #: Evaluation Metrics Across All Models 
+##### Table #: Evaluation Metrics Across All Models 
 ![](images/Rank.png)
+
+#### 6a.) Global Variable Importance
+
+![](images/GlobalFeatureImportance.png)
+
+#### 6b.) Partial Dependence for Top 3 Most Important Variables 
+
+![](images/PDdebt_to_income_ratio_std.png)
+
+![](images/PDloan_to_value_ratio_std.png)
+
+![](images/PDproperty_value_std.png)
 
 * Provide at least one plot or table from each weekly assignment for a total of at least six plots,
 that must include the global variable importance and partial dependence of your group’s best
